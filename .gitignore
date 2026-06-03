@@ -1,0 +1,39 @@
+# 忽略 datasets 文件夹
+datasets/
+dataset/
+data/
+eval/
+pretrainModel/
+diagram/
+dataset_ori/
+save/
+
+# 忽略其他大文件
+*.pth
+*.pkl
+*.npy
+*.h5
+*.hdf5
+
+# 忽略输出目录
+runs/
+outputs/
+results/
+checkpoints/
+ablationruns_esdis
+# 忽略日志
+*.log
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Local code index/cache
+.codegraph/
+
+pretrainModel/
+save/
+
