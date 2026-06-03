@@ -109,7 +109,7 @@ ablationruns_esdis/
 The best checkpoint is saved in:
 
 ```text
-ablationruns_esdis/{run_name}/checkpoints/
+runs/{run_name}/checkpoints/
 ```
 
 ## 4. Test
@@ -119,7 +119,7 @@ Modify `defect_test.py`:
 ```python
 from model.WPFormer6 import WPFormer
 file_dir = "./datasets"
-model_save = "./ablationruns_esdis/{run_name}/checkpoints/{best_model}.pth"
+model_save = "./runs/{run_name}/checkpoints/{best_model}.pth"
 ```
 
 Run:
@@ -131,7 +131,7 @@ python defect_test.py
 Prediction maps are saved in:
 
 ```text
-ablationPred/
+Pred/
 ```
 
 ## 5. Eval
