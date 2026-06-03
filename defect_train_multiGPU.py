@@ -203,7 +203,7 @@ def train(model_name, dataset_name, comment,base_lr,base_batch,epoch_cfg=None):
     comment=comment + str(base_lr)
 
     run_time = time.strftime("%Y%m%d-%H%M%S")
-    save_root = f"./ablationruns_esdis/{run_time}_{comment}"
+    save_root = f"./runs/{run_time}_{comment}"
     ckpt_dir = os.path.join(save_root, "checkpoints")
     os.makedirs(ckpt_dir, exist_ok=True)
 
