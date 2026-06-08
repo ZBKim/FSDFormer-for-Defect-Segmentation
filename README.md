@@ -1,6 +1,6 @@
-# WPFormer
+# FSDFormer
 
-This repository contains the training and evaluation code for WPFormer on surface defect segmentation datasets.
+This repository contains the training and evaluation code for FSDFormer on surface defect segmentation datasets.
 
 ## News
 
@@ -77,7 +77,7 @@ Before training, modify the dataset root in `defect_train_multiGPU.py`:
 root = "./datasets"
 ```
 
-Modify the PVTv2 pretrained model path in `model/WPFormer6.py`:
+Modify the PVTv2 pretrained model path in `model/FSDFormer.py`:
 
 ```python
 path = "./pretrainModel/pvt_v2_b2.pth"
@@ -117,7 +117,7 @@ runs/{run_name}/checkpoints/
 Modify `defect_test.py`:
 
 ```python
-from model.WPFormer6 import WPFormer
+from model.FSDFormer import FSDFormer
 file_dir = "./datasets"
 model_save = "./runs/{run_name}/checkpoints/{best_model}.pth"
 ```
@@ -141,29 +141,3 @@ Modify the prediction path and GT path in `eval.py`, then run:
 ```bash
 python eval.py
 ```
-
-## 6. Pretrained Models and Results
-
-| Dataset | Dataset Download | Backbone | Input Size | Config | Checkpoint | Prediction Maps |
-| --- | --- | --- | --- | --- | --- | --- |
-| ESDIs-SOD | [Link](https://example.com/dataset-esdis-sod) | [PVTv2-B2](https://example.com/pvt-v2-b2) | 384x384 | channel=64, bs=32, lr=1.6e-4 | [Link](https://example.com/checkpoint-esdis-sod) | [Link](https://example.com/pred-esdis-sod) |
-| CrackSeg9k | [Link](https://example.com/dataset-crackseg9k) | [PVTv2-B2](https://example.com/pvt-v2-b2) | 384x384 | channel=64, bs=32, lr=1.6e-4 | [Link](https://example.com/checkpoint-crackseg9k) | [Link](https://example.com/pred-crackseg9k) |
-| ZJU-Leaper | [Link](https://example.com/dataset-zju-leaper) | [PVTv2-B2](https://example.com/pvt-v2-b2) | 384x384 | channel=64, bs=32, lr=1.6e-4 | [Link](https://example.com/checkpoint-zju-leaper) | [Link](https://example.com/pred-zju-leaper) |
-
-## Citation
-
-If this code is helpful, please cite:
-
-```bibtex
-@inproceedings{yan2025wavelet,
-  title={Wavelet and Prototype Augmented Query-based Transformer for Pixel-level Surface Defect Detection},
-  author={Yan, Feng and Jiang, Xiaoheng and Lu, Yang and Cao, Jiale and Chen, Dong and Xu, Mingliang},
-  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
-  pages={23860--23869},
-  year={2025}
-}
-```
-
-## Acknowledgement
-
-This README follows the style of the official WPFormer repository.
