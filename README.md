@@ -48,6 +48,12 @@ Download pre-trained weights[PVTv2-B2](https://drive.google.com/file/d/1aj0bt-8-
 pretrainModel/pvt_v2_b2.pth
 ```
 
+You can download the data set that we have already divided:
+[CrackSeg9k](https://drive.google.com/file/d/1pOQBOjs_r9g6by0QQWU6hFT-dGeHlQqZ/view?usp=sharing)
+[ZJU-Leaper](https://drive.google.com/file/d/1KpKTYP97BnsKvfB2PCZ_jiBrZQJwUnb8/view?usp=sharing)
+[ESDI-SODs](https://drive.google.com/file/d/1KpKTYP97BnsKvfB2PCZ_jiBrZQJwUnb8/view?usp=sharing)
+
+
 Put datasets into `datasets` with the following structure:
 
 ```text
