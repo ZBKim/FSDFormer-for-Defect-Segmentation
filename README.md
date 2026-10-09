@@ -2,10 +2,15 @@
 
 This repository contains the training and evaluation code for FSDFormer on surface defect segmentation datasets.
 
-## News
+## 
+We provided the weights trained on three datasets：
+https://drive.google.com/file/d/1VUD2eXeNSBDo5U4yqKRpeAYqRLke6Fny/view?usp=sharing, 
+https://drive.google.com/file/d/1mTaJPNuagVMnmJZCMCLIdAokO345tz_O/view?usp=sharing, 
+https://drive.google.com/file/d/1y5cSVnZBJ5Rq6pY3tsbYpP9p492xMVdn/view?usp=sharing
 
-- Dataset links, pretrained backbone checkpoints, and trained model checkpoints will be released soon.
-
+[显示的文字](https://drive.google.com/file/d/1VUD2eXeNSBDo5U4yqKRpeAYqRLke6Fny/view?usp=sharing)
+[显示的文字](https://drive.google.com/file/d/1mTaJPNuagVMnmJZCMCLIdAokO345tz_O/view?usp=sharing)
+[显示的文字](https://drive.google.com/file/d/1y5cSVnZBJ5Rq6pY3tsbYpP9p492xMVdn/view?usp=sharing)
 ## 1. Requirements
 
 Recommended environment:
