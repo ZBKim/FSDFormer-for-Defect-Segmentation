@@ -41,8 +41,7 @@ Create folders in the project root:
 
 ```bash
 mkdir -p pretrainModel datasets
-```
-https://drive.google.com/file/d/1aj0bt-8--K_zpLYVXcH252l__4kr1Cu1/view?usp=sharing
+``
 Download pre-trained weights[PVTv2-B2](https://drive.google.com/file/d/1aj0bt-8--K_zpLYVXcH252l__4kr1Cu1/view?usp=sharing), then put the PVTv2 pretrained model into `pretrainModel`:
 
 ```text
